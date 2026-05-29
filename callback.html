@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>TikTok Auth Callback</title></head>
+<body>
+<h1>Authorization Code</h1>
+<p>以下のコードを CLI にペーストしてください:</p>
+<pre id="code"></pre>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get('code');
+  const error = params.get('error');
+  if (error) {
+    document.getElementById('code').textContent = 'Error: ' + error;
+  } else if (code) {
+    document.getElementById('code').textContent = code;
+  } else {
+    document.getElementById('code').textContent = 'No code found in URL';
+  }
+</script>
+</body>
+</html>
