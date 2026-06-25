@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TikTok Uploader</title>
-    <style>
-        body { font-family: -apple-system, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; color: #333; }
-        h1 { font-size: 1.5rem; }
-        a { color: #0066cc; }
-    </style>
-    <link rel="shortcut icon" href="images/profile_photo_crop.png" type="image/png">
-</head>
-<body>
-    <h1>TikTok Uploader</h1>
-    <p>Personal CLI tool for publishing Japanese language learning short videos to TikTok.</p>
-    <p>This app is for personal use only and does not collect or store data from third parties.</p>
-    <nav>
-        <a href="privacy.html">Privacy Policy</a> |
-        <a href="terms.html">Terms of Service</a>
-    </nav>
-</body>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TikTok Uploader</title>
+      <style>
+          body { font-family: -apple-system, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; color: #333; }
+          .brand { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+          .brand img { width: 72px; height: 72px; border-radius: 16px; object-fit: cover; }
+          h1 { font-size: 1.5rem; margin: 0; }
+          a { color: #0066cc; }
+      </style>
+      <!-- 3か所すべて同じ画像ファイルを指す -->
+      <link rel="shortcut icon" href="images/profile_photo_crop.png" type="image/png">
+      <link rel="apple-touch-icon" href="images/profile_photo_crop.png">
+      <meta property="og:image" content="images/profile_photo_crop.png">
+  </head>
+  <body>
+      <!-- ページ上に見えるロゴ（= favicon = TikTok App icon と同一画像） -->
+      <header class="brand">
+          <img src="images/profile_photo_crop.png" alt="TikTok Uploader logo">
+          <h1>TikTok Uploader</h1>
+      </header>
+      <p>Personal CLI tool for publishing Japanese language learning short videos to TikTok.</p>
+      <p>This app is for personal use only and does not collect or store data from third parties.</p>
+      <nav>
+          <a href="privacy.html">Privacy Policy</a> |
+          <a href="terms.html">Terms of Service</a>
+      </nav>
+  </body>
 </html>
